@@ -1,0 +1,19 @@
+# This is mounting command dedicated to my machine
+
+sshfs melashri@novagpvm02.fnal.gov:/nova/app/users/melashri/ /home/mib/mount
+
+# for nonempty folders 
+sshfs -o nonempty  melashri@novagpvm02.fnal.gov:/nova/app/users/melashri/ /home/mib/mount
+
+sshfs -o nonempty  melashri@novagpvm02.fnal.gov:/nashome/m/melashri /home/mib/mount2
+
+# SamWeb security
+setup_fnal_security -k
+
+# count number of events
+count_events --hr <file>
+
+
+# run nova jobs 
+nova -c <filejob.fcl> -s <daqfile.root>
+
