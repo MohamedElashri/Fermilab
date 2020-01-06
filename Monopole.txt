@@ -1,0 +1,1436 @@
+mib@mib-VirtualBox:~$ ssh fermi
+Last login: Sat Feb 23 14:47:31 2019 from 192.190.216.21
+                              NOTICE TO USERS
+
+       This  is a Federal computer (and/or it is directly connected to a
+       Fermilab local network system) that is the property of the United
+       States Government.  It is for authorized use only.  Users (autho-
+       rized or unauthorized) have no explicit or  implicit  expectation
+       of privacy.
+
+       Any  or  all uses of this system and all files on this system may
+       be intercepted, monitored, recorded,  copied, audited, inspected,
+       and  disclosed  to authorized site, Department of Energy  and law
+       enforcement personnel, as  well as authorized officials of  other
+       agencies,  both  domestic and foreign.  By using this system, the
+       user consents to such interception, monitoring, recording,  copy-
+       ing,  auditing,  inspection,  and disclosure at the discretion of
+       authorized site or Department of Energy personnel.
+
+       Unauthorized or improper use of this system may result in  admin-
+       istrative  disciplinary  action and civil and criminal penalties.
+       By continuing to use this system you indicate your  awareness  of
+       and  consent to these terms and conditions of use.  LOG OFF IMME-
+       DIATELY if you do not agree to  the  conditions  stated  in  this
+       warning.
+
+       Fermilab  policy  and  rules for computing, including appropriate
+       use, may be found at http://www.fnal.gov/cd/main/cpolicy.html
+------------------------------------------------------------------------------
+                     ..::Powered by ECF-SSI::..                      
+
+   Hostname: novagpvm05.fnal.gov         OS Release: SLF 6.6 (Ramsey)          
+         IP: 131.225.67.17                   Subnet: 255.255.255.0             
+
+     Kernel: 2.6.32-754.6.3                    Arch: x86_64                    
+        RAM: 11.63 GiB                         Swap: 2.00 GiB                  
+      Cores: 4                              Virtual: rhev                      
+
+ SSH Logins: 4                             Load Avg: 0.0 0.05 0.09             
+
+       Help: https://ssiwiki.fnal.gov/wiki/Interactive_Server_Facility         
+------------------------------------------------------------------------------
+-bash-4.1$ setup_nova -b maxopt -r S16-09-13
+packet_write_wait: Connection to 131.225.67.17 port 22: Broken pipe
+mib@mib-VirtualBox:~$ ssh fermi
+Last login: Sat Feb 23 12:10:56 2019 from 192.190.216.21
+                              NOTICE TO USERS
+
+       This  is a Federal computer (and/or it is directly connected to a
+       Fermilab local network system) that is the property of the United
+       States Government.  It is for authorized use only.  Users (autho-
+       rized or unauthorized) have no explicit or  implicit  expectation
+       of privacy.
+
+       Any  or  all uses of this system and all files on this system may
+       be intercepted, monitored, recorded,  copied, audited, inspected,
+       and  disclosed  to authorized site, Department of Energy  and law
+       enforcement personnel, as  well as authorized officials of  other
+       agencies,  both  domestic and foreign.  By using this system, the
+       user consents to such interception, monitoring, recording,  copy-
+       ing,  auditing,  inspection,  and disclosure at the discretion of
+       authorized site or Department of Energy personnel.
+
+       Unauthorized or improper use of this system may result in  admin-
+       istrative  disciplinary  action and civil and criminal penalties.
+       By continuing to use this system you indicate your  awareness  of
+       and  consent to these terms and conditions of use.  LOG OFF IMME-
+       DIATELY if you do not agree to  the  conditions  stated  in  this
+       warning.
+
+       Fermilab  policy  and  rules for computing, including appropriate
+       use, may be found at http://www.fnal.gov/cd/main/cpolicy.html
+------------------------------------------------------------------------------
+                     ..::Powered by ECF-SSI::..                      
+
+   Hostname: novagpvm02.fnal.gov         OS Release: SLF 6.6 (Ramsey)          
+         IP: 131.225.67.73                   Subnet: 255.255.255.0             
+
+     Kernel: 2.6.32-754.6.3                    Arch: x86_64                    
+        RAM: 11.63 GiB                         Swap: 2.00 GiB                  
+      Cores: 4                              Virtual: rhev                      
+
+ SSH Logins: 5                             Load Avg: 0.04 0.5 1.21             
+
+       Help: https://ssiwiki.fnal.gov/wiki/Interactive_Server_Facility         
+------------------------------------------------------------------------------
+-bash-4.1$ setup_nova -b maxopt -r S16-09-13
+nutools version v1_21_01 NOT GREATER THAN v2_02_00; DO NOTHING
+/cvmfs/nova.opensciencegrid.org/externals/art/v1_17_06/slf6.x86_64.e9.nu.prof/bin/checkClassVersion
+
+Release: S16-09-13
+Build:   maxopt 
+
+PWD: /nashome/m/melashri
+
+              WELCOME TO NOvASOFT     
+  ART: v1_17_06           ROOT: v5_34_32 
+Help is nearby: #art, #cafana, and #nova_offline 
+
+-bash-4.1$ cd srt
+-bash-4.1$ pwd
+/nova/app/users/melashri/srt
+-bash-4.1$ ^C
+-bash-4.1$ srt_setup -a
+-bash-4.1$ ll
+total 44
+-rw-r--r-- 1 melashri nova  154 Feb 23 12:50 GNUmakefile
+drwxr-xr-x 3 melashri nova 6144 Feb 23 12:52 Monopole
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 bin
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 doc
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:51 include
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:52 job
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 lib
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 man
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 results
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 tmp
+-bash-4.1$ cd Monopole/
+-bash-4.1$ ll
+total 296
+-rw-r--r-- 1 melashri nova  1753 Feb 23 12:51 CMakeLists.txt
+-rw-r--r-- 1 melashri nova 10534 Feb 23 12:51 Cluster.cxx
+-rw-r--r-- 1 melashri nova  1728 Feb 23 12:51 Cluster.h
+-rw-r--r-- 1 melashri nova   340 Feb 23 12:51 Constants.h
+-rw-r--r-- 1 melashri nova   133 Feb 23 12:51 DataCheckMonopole.fcl
+-rw-r--r-- 1 melashri nova  6932 Feb 23 12:51 DataCheckMonopole_module.cc
+-rw-r--r-- 1 melashri nova    82 Feb 23 12:51 EventSelector.fcl
+-rw-r--r-- 1 melashri nova  3066 Feb 23 12:51 EventSelector_module.cc
+-rw-r--r-- 1 melashri nova  1175 Feb 23 12:41 GNUmakefile
+-rw-r--r-- 1 melashri nova   185 Feb 23 12:51 HighEnergySliceRemoval.fcl
+-rw-r--r-- 1 melashri nova  2475 Feb 23 12:51 HighEnergySliceRemoval_module.cc
+-rw-r--r-- 1 melashri nova   221 Feb 23 12:51 Monopole.fcl
+-rw-r--r-- 1 melashri nova   418 Feb 23 12:51 MonopoleCluster.fcl
+-rw-r--r-- 1 melashri nova  6787 Feb 23 12:51 MonopoleCluster_module.cc
+-rw-r--r-- 1 melashri nova   308 Feb 23 12:51 MonopoleTrack.fcl
+-rw-r--r-- 1 melashri nova  6977 Feb 23 12:51 MonopoleTrack_module.cc
+-rw-r--r-- 1 melashri nova 61751 Feb 23 12:52 Monopole_dict.cc
+-rw-r--r-- 1 melashri nova   634 Feb 23 12:52 Monopole_map.cc
+-rw-r--r-- 1 melashri nova 17635 Feb 23 12:51 Monopole_module.cc
+-rw-r--r-- 1 melashri nova   140 Feb 23 12:51 SlowMonopoleAna.fcl
+-rw-r--r-- 1 melashri nova 21489 Feb 23 12:51 SlowMonopoleAna_module.cc
+-rw-r--r-- 1 melashri nova    92 Feb 23 12:51 SlowMonopoleFilt.fcl
+-rw-r--r-- 1 melashri nova  6117 Feb 23 12:51 SlowMonopoleFilt_module.cc
+-rw-r--r-- 1 melashri nova 15228 Feb 23 12:51 SlowMonopoleTrigger.cxx
+-rw-r--r-- 1 melashri nova  2898 Feb 23 12:51 SlowMonopoleTrigger.h
+-rw-r--r-- 1 melashri nova  6612 Feb 23 12:51 Track.cxx
+-rw-r--r-- 1 melashri nova  2126 Feb 23 12:51 Track.h
+-rw-r--r-- 1 melashri nova   502 Feb 23 12:51 Track2D.h
+-rw-r--r-- 1 melashri nova  4293 Feb 23 12:51 Track3D.cxx
+-rw-r--r-- 1 melashri nova  1154 Feb 23 12:51 Track3D.h
+-rw-r--r-- 1 melashri nova   628 Feb 23 12:51 classes.h
+-rw-r--r-- 1 melashri nova   669 Feb 23 12:51 classes_def.xml
+-rwxr-xr-x 1 melashri nova  5864 Feb 23 12:51 dcmonogrid.sh
+-rw-r--r-- 1 melashri nova   522 Feb 23 12:51 dcmonojob.fcl
+-rw-r--r-- 1 melashri nova  3685 Feb 23 12:51 monojob.fcl
+-rw-r--r-- 1 melashri nova  2119 Feb 23 12:51 smmgenjob.fcl
+-rw-r--r-- 1 melashri nova  2016 Feb 23 12:51 smmsinglepgenjob.fcl
+-rw-r--r-- 1 melashri nova  2370 Feb 23 12:51 smtanajob.fcl
+-bash-4.1$ vim GNUmakefile
+-bash-4.1$ ll
+total 300
+-rw-r--r-- 1 melashri nova  1753 Feb 23 12:51 CMakeLists.txt
+-rw-r--r-- 1 melashri nova 10534 Feb 23 12:51 Cluster.cxx
+-rw-r--r-- 1 melashri nova  1728 Feb 23 12:51 Cluster.h
+-rw-r--r-- 1 melashri nova   340 Feb 23 12:51 Constants.h
+-rw-r--r-- 1 melashri nova   133 Feb 23 12:51 DataCheckMonopole.fcl
+-rw-r--r-- 1 melashri nova  6932 Feb 23 12:51 DataCheckMonopole_module.cc
+-rw-r--r-- 1 melashri nova    82 Feb 23 12:51 EventSelector.fcl
+-rw-r--r-- 1 melashri nova  3066 Feb 23 12:51 EventSelector_module.cc
+-rw-r--r-- 1 melashri nova  1177 Feb 23 14:55 GNUmakefile
+-rw-r--r-- 1 melashri nova  1175 Feb 23 12:41 GNUmakefile~
+-rw-r--r-- 1 melashri nova   185 Feb 23 12:51 HighEnergySliceRemoval.fcl
+-rw-r--r-- 1 melashri nova  2475 Feb 23 12:51 HighEnergySliceRemoval_module.cc
+-rw-r--r-- 1 melashri nova   221 Feb 23 12:51 Monopole.fcl
+-rw-r--r-- 1 melashri nova   418 Feb 23 12:51 MonopoleCluster.fcl
+-rw-r--r-- 1 melashri nova  6787 Feb 23 12:51 MonopoleCluster_module.cc
+-rw-r--r-- 1 melashri nova   308 Feb 23 12:51 MonopoleTrack.fcl
+-rw-r--r-- 1 melashri nova  6977 Feb 23 12:51 MonopoleTrack_module.cc
+-rw-r--r-- 1 melashri nova 61751 Feb 23 12:52 Monopole_dict.cc
+-rw-r--r-- 1 melashri nova   634 Feb 23 12:52 Monopole_map.cc
+-rw-r--r-- 1 melashri nova 17635 Feb 23 12:51 Monopole_module.cc
+-rw-r--r-- 1 melashri nova   140 Feb 23 12:51 SlowMonopoleAna.fcl
+-rw-r--r-- 1 melashri nova 21489 Feb 23 12:51 SlowMonopoleAna_module.cc
+-rw-r--r-- 1 melashri nova    92 Feb 23 12:51 SlowMonopoleFilt.fcl
+-rw-r--r-- 1 melashri nova  6117 Feb 23 12:51 SlowMonopoleFilt_module.cc
+-rw-r--r-- 1 melashri nova 15228 Feb 23 12:51 SlowMonopoleTrigger.cxx
+-rw-r--r-- 1 melashri nova  2898 Feb 23 12:51 SlowMonopoleTrigger.h
+-rw-r--r-- 1 melashri nova  6612 Feb 23 12:51 Track.cxx
+-rw-r--r-- 1 melashri nova  2126 Feb 23 12:51 Track.h
+-rw-r--r-- 1 melashri nova   502 Feb 23 12:51 Track2D.h
+-rw-r--r-- 1 melashri nova  4293 Feb 23 12:51 Track3D.cxx
+-rw-r--r-- 1 melashri nova  1154 Feb 23 12:51 Track3D.h
+-rw-r--r-- 1 melashri nova   628 Feb 23 12:51 classes.h
+-rw-r--r-- 1 melashri nova   669 Feb 23 12:51 classes_def.xml
+-rwxr-xr-x 1 melashri nova  5864 Feb 23 12:51 dcmonogrid.sh
+-rw-r--r-- 1 melashri nova   522 Feb 23 12:51 dcmonojob.fcl
+-rw-r--r-- 1 melashri nova  3685 Feb 23 12:51 monojob.fcl
+-rw-r--r-- 1 melashri nova  2119 Feb 23 12:51 smmgenjob.fcl
+-rw-r--r-- 1 melashri nova  2016 Feb 23 12:51 smmsinglepgenjob.fcl
+-rw-r--r-- 1 melashri nova  2370 Feb 23 12:51 smtanajob.fcl
+-bash-4.1$ cd ..
+-bash-4.1$ gmake all
+<**codegen**>
+<**codegen**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**include**>
+<**include**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**lib**>
+<**lib**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**linking**> libDataCheckMonopole_module.so
+/usr/bin/ld: cannot find -lMonopole
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libDataCheckMonopole_module.so] Error 1
+gmake[1]: *** [Monopole.lib] Error 2
+gmake: *** [lib] Error 2
+-bash-4.1$ make clean
+-bash-4.1$ make
+<**codegen**>
+<**codegen**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**include**>
+<**include**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**lib**>
+<**lib**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**compiling**> DataCheckMonopole_module.cc
+<**linking**> libDataCheckMonopole_module.so
+/usr/bin/ld: cannot find -lMonopole
+collect2: error: ld returned 1 exit status
+make[2]: *** [/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libDataCheckMonopole_module.so] Error 1
+make[1]: *** [Monopole.lib] Error 2
+make: *** [lib] Error 2
+-bash-4.1$ make clean
+-bash-4.1$ make
+<**codegen**>
+<**codegen**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**include**>
+<**include**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**lib**>
+<**lib**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**compiling**> DataCheckMonopole_module.cc
+<**linking**> libDataCheckMonopole_module.so
+/usr/bin/ld: cannot find -lMonopole
+collect2: error: ld returned 1 exit status
+make[2]: *** [/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libDataCheckMonopole_module.so] Error 1
+make[1]: *** [Monopole.lib] Error 2
+make: *** [lib] Error 2
+-bash-4.1$ make clean
+-bash-4.1$ make
+<**codegen**>
+<**codegen**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+GNUmakefile:12: SoftRelTools/-lMonopole.mk: No such file or directory
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+make[2]: *** No rule to make target `SoftRelTools/-lMonopole.mk'.  Stop.
+make[1]: *** [Monopole.codegen] Error 2
+make: *** [codegen] Error 2
+-bash-4.1$ make clean
+-bash-4.1$ make
+<**codegen**>
+<**codegen**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**include**>
+<**include**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**lib**>
+<**lib**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**compiling**> DataCheckMonopole_module.cc
+<**linking**> libDataCheckMonopole_module.so
+/usr/bin/ld: cannot find -lMonopole
+collect2: error: ld returned 1 exit status
+make[2]: *** [/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libDataCheckMonopole_module.so] Error 1
+make[1]: *** [Monopole.lib] Error 2
+make: *** [lib] Error 2
+-bash-4.1$ make clean
+-bash-4.1$ make
+<**codegen**>
+<**codegen**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+GNUmakefile:43: *** missing separator.  Stop.
+make[1]: *** [Monopole.codegen] Error 2
+make: *** [codegen] Error 2
+-bash-4.1$ make clean
+-bash-4.1$ make
+<**codegen**>
+<**codegen**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**include**>
+<**include**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**lib**>
+<**lib**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**compiling**> DataCheckMonopole_module.cc
+<**linking**> libDataCheckMonopole_module.so
+/usr/bin/ld: cannot find -lMonopole
+collect2: error: ld returned 1 exit status
+make[2]: *** [/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libDataCheckMonopole_module.so] Error 1
+make[1]: *** [Monopole.lib] Error 2
+make: *** [lib] Error 2
+-bash-4.1$ make clean
+-bash-4.1$ make
+<**codegen**>
+<**codegen**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**include**>
+<**include**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**lib**>
+<**lib**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**compiling**> DataCheckMonopole_module.cc
+<**linking**> libDataCheckMonopole_module.so
+/usr/bin/ld: cannot find -lMonopole
+collect2: error: ld returned 1 exit status
+make[2]: *** [/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libDataCheckMonopole_module.so] Error 1
+make[1]: *** [Monopole.lib] Error 2
+make: *** [lib] Error 2
+-bash-4.1$ pwd
+/nova/app/users/melashri/srt
+-bash-4.1$ make clean
+-bash-4.1$ gmake all
+<**codegen**>
+<**codegen**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**include**>
+<**include**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**lib**>
+<**lib**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**compiling**> DataCheckMonopole_module.cc
+<**linking**> libDataCheckMonopole_module.so
+/usr/bin/ld: cannot find -lMonopole
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libDataCheckMonopole_module.so] Error 1
+gmake[1]: *** [Monopole.lib] Error 2
+gmake: *** [lib] Error 2
+-bash-4.1$ make clean
+-bash-4.1$ gmake all
+<**codegen**>
+<**codegen**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+GNUmakefile:22: *** missing separator.  Stop.
+gmake[1]: *** [Monopole.codegen] Error 2
+gmake: *** [codegen] Error 2
+-bash-4.1$ gmake all
+<**codegen**>
+<**codegen**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+GNUmakefile:22: *** missing separator.  Stop.
+gmake[1]: *** [Monopole.codegen] Error 2
+gmake: *** [codegen] Error 2
+-bash-4.1$ make clean
+-bash-4.1$ make
+<**codegen**>
+<**codegen**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**include**>
+<**include**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**lib**>
+<**lib**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:275: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:275: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/simplebinlibdep-Monopole.mk'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+<**compiling**> DataCheckMonopole_module.cc
+<**linking**> libDataCheckMonopole_module.so
+/usr/bin/ld: cannot find -lMonopole
+collect2: error: ld returned 1 exit status
+make[2]: *** [/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libDataCheckMonopole_module.so] Error 1
+make[1]: *** [Monopole.lib] Error 2
+make: *** [lib] Error 2
+-bash-4.1$ pwd
+/nova/app/users/melashri/srt
+-bash-4.1$ ll
+total 44
+-rw-r--r-- 1 melashri nova  154 Feb 23 12:50 GNUmakefile
+drwxr-xr-x 3 melashri nova 6144 Feb 23 15:27 Monopole
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 bin
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 doc
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:51 include
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:52 job
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 lib
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 man
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 results
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 tmp
+-bash-4.1$ cd lib
+-bash-4.1$ ll
+total 4
+drwxr-xr-x 2 melashri nova 2048 Feb 23 15:37 Linux2.6-GCC-maxopt
+-bash-4.1$ cd ..
+-bash-4.1$ cd tmp
+-bash-4.1$ ll
+total 4
+drwxr-xr-x 3 melashri nova 2048 Feb 23 15:36 Linux2.6-GCC-maxopt
+-bash-4.1$ cd ..
+-bash-4.1$ ll
+total 44
+-rw-r--r-- 1 melashri nova  154 Feb 23 12:50 GNUmakefile
+drwxr-xr-x 3 melashri nova 6144 Feb 23 15:27 Monopole
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 bin
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 doc
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:51 include
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:52 job
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 lib
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 man
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 results
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 tmp
+-bash-4.1$ cd job
+-bash-4.1$ ..
+-bash: ..: command not found
+-bash-4.1$ ll
+total 52
+-rw-r--r-- 1 melashri nova  133 Feb 23 12:52 DataCheckMonopole.fcl
+-rw-r--r-- 1 melashri nova   82 Feb 23 12:52 EventSelector.fcl
+-rw-r--r-- 1 melashri nova  185 Feb 23 12:52 HighEnergySliceRemoval.fcl
+-rw-r--r-- 1 melashri nova  221 Feb 23 12:52 Monopole.fcl
+-rw-r--r-- 1 melashri nova  418 Feb 23 12:52 MonopoleCluster.fcl
+-rw-r--r-- 1 melashri nova  308 Feb 23 12:52 MonopoleTrack.fcl
+-rw-r--r-- 1 melashri nova  140 Feb 23 12:52 SlowMonopoleAna.fcl
+-rw-r--r-- 1 melashri nova   92 Feb 23 12:52 SlowMonopoleFilt.fcl
+-rw-r--r-- 1 melashri nova  522 Feb 23 12:52 dcmonojob.fcl
+-rw-r--r-- 1 melashri nova 3685 Feb 23 12:52 monojob.fcl
+-rw-r--r-- 1 melashri nova 2119 Feb 23 12:52 smmgenjob.fcl
+-rw-r--r-- 1 melashri nova 2016 Feb 23 12:52 smmsinglepgenjob.fcl
+-rw-r--r-- 1 melashri nova 2370 Feb 23 12:52 smtanajob.fcl
+-bash-4.1$ cd ..
+-bash-4.1$ ll
+total 44
+-rw-r--r-- 1 melashri nova  154 Feb 23 12:50 GNUmakefile
+drwxr-xr-x 3 melashri nova 6144 Feb 23 15:27 Monopole
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 bin
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 doc
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:51 include
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:52 job
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 lib
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 man
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 results
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 tmp
+-bash-4.1$ pwd
+/nova/app/users/melashri/srt
+-bash-4.1$ echo $SRT_PUBLIC_CONTEXT 
+/cvmfs/nova.opensciencegrid.org/novasoft/slf6/novasoft/releases/S16-09-13
+-bash-4.1$ echo $SRT_PRIVATE_CONTEXT 
+/nova/app/users/melashri/srt
+-bash-4.1$ LS -LTR
+-bash: LS: command not found
+-bash-4.1$ ls -ltr
+total 44
+-rw-r--r-- 1 melashri nova  154 Feb 23 12:50 GNUmakefile
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 man
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 doc
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 results
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:51 include
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 bin
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 lib
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 tmp
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:52 job
+drwxr-xr-x 3 melashri nova 6144 Feb 23 15:27 Monopole
+-bash-4.1$ make Monopole.clean
+<**clean**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_dict.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: overriding commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:19: warning: ignoring old commands for target `Monopole_map.cc'
+SRT_NOVA/special/pre_standard.mk:80: warning: overriding commands for target `lib'
+SRT_NOVA/special/pre_standard.mk:80: warning: ignoring old commands for target `lib'
+SoftRelTools/standard.mk:711: warning: overriding commands for target `clean'
+SoftRelTools/standard.mk:711: warning: ignoring old commands for target `clean'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/bin/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/doc/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/man/'
+SoftRelTools/standard.mk:739: warning: overriding commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/standard.mk:739: warning: ignoring old commands for target `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/'
+SoftRelTools/arch_spec_art.mk:88: warning: overriding commands for target `cleanjob'
+SoftRelTools/arch_spec_art.mk:88: warning: ignoring old commands for target `cleanjob'
+-bash-4.1$ emacs -nw Monopole/GNUmakefile
+-bash-4.1$ make Monopole.clean
+<**clean**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+-bash-4.1$ emacs -nw Monopole/GNUmakefile
+^X^C^[OB^[OB^[OB^[OB^[OB^[OB^X^C
+[1]+  Stopped                 emacs -nw Monopole/GNUmakefile
+-bash-4.1$ make Monopole.all
+<**all**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+<**compiling**> Cluster.cxx
+In file included from /nova/app/users/melashri/srt/include/Monopole/Cluster.h:4:0,
+                 from /nova/app/users/melashri/srt/Monopole/Cluster.cxx:1:
+/nova/app/users/melashri/srt/include/Monopole/Track.h:4:40: fatal error: DDTBaseDataProducts/DAQHit.h: No such file or directory
+ #include "DDTBaseDataProducts/DAQHit.h"
+                                        ^
+compilation terminated.
+mv: cannot stat `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/srt_dep_tmp.12852': No such file or directory
+make[1]: *** [/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/libMonopole-shared/Cluster.o] Error 1
+make: *** [Monopole.all] Error 2
+-bash-4.1$ make Monopole.all
+<**all**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+<**compiling**> Cluster.cxx
+/nova/app/users/melashri/srt/Monopole/Cluster.cxx: In lambda function:
+/nova/app/users/melashri/srt/Monopole/Cluster.cxx:89:16: warning: unused variable ‘n_contained_hit’ [-Wunused-variable]
+       unsigned n_contained_hit = 0;
+                ^
+<**compiling**> SlowMonopoleTrigger.cxx
+/nova/app/users/melashri/srt/Monopole/SlowMonopoleTrigger.cxx:1:36: fatal error: DDTTools/DDTExtensions.h: No such file or directory
+ #include "DDTTools/DDTExtensions.h"
+                                    ^
+compilation terminated.
+mv: cannot stat `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/srt_dep_tmp.12995': No such file or directory
+make[1]: *** [/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/Monopole/libMonopole-shared/SlowMonopoleTrigger.o] Error 1
+make: *** [Monopole.all] Error 2
+-bash-4.1$ pwd
+/nova/app/users/melashri/srt
+-bash-4.1$ ls /cvmfs/nova.opensciencegrid.org/novasoft/slf6/novasoft/releases/S16-09-13/DDTConverters/
+.svn/                            GNUmakefile
+CMakeLists.txt                   RawDigit2DAQHit.fcl
+ClusterConvert.fcl               RawDigit2DAQHit_module.cc
+ClusterConvert_module.cc         daqhit2rawjob.fcl
+DAQHit2Raw.fcl                   rawdigit2daqhit_plusddt_job.fcl
+DAQHit2Raw_module.cc             rawdigit2daqhitjob.fcl
+DDT_slicer_recojob.fcl           
+-bash-4.1$ ls /cvmfs/nova.opensciencegrid.org/novasoft/slf6/novasoft/releases/S16-09-13/
+Display all 103 possibilities? (y or n)
+-bash-4.1$ make Monopole.clean
+<**clean**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+-bash-4.1$ addpkg
+addpkg      addpkg_svn  
+-bash-4.1$ ls -ltr
+total 44
+-rw-r--r-- 1 melashri nova  154 Feb 23 12:50 GNUmakefile
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 man
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 doc
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:50 results
+drwxr-xr-x 2 melashri nova 2048 Feb 23 12:51 include
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 bin
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 lib
+drwxr-xr-x 3 melashri nova 2048 Feb 23 12:52 tmp
+drwxr-xr-x 2 melashri nova 2048 Feb 23 16:06 job
+drwxr-xr-x 3 melashri nova 6144 Feb 23 16:13 Monopole
+-bash-4.1$ echo $CVSROOT
+svn+ssh://p-novaart@cdcvs.fnal.gov/cvs/projects/novaart/pkgs.svn
+-bash-4.1$ svn co svn+ssh://p-novaart@cdcvs.fnal.gov/cvs/projects/novaddt/trunk/DDTTools 
+svn: No repository found in 'svn+ssh://p-novaart@cdcvs.fnal.gov/cvs/projects/novaddt/trunk/DDTTools'
+-bash-4.1$ #svn co svn+ssh://p-novaart@cdcvs.fnal.gov/cvs/projects/novaddt/trunk/DDTTools 
+-bash-4.1$ 
+-bash-4.1$ cd /grid/fermiapp/nova/novaddt
+novaddt/     novaddt.old/ 
+-bash-4.1$ cd /grid/fermiapp/nova/novaddt/
+novaddt_doxygen.log  products/            srt/
+novaddt_make.log     releases/            
+packages/            setup/               
+-bash-4.1$ cd /grid/fermiapp/nova/novaddt/releases/
+boot/        development/ 
+-bash-4.1$ cd /grid/fermiapp/nova/novaddt/releases/development/
+.base_release            HitSlicers/              Statistics/
+CalibrationTriggers/     HitSorters/              SuperNovaDDT/
+DAQChannelMap/           MoonShadowTrigger/       Tracking/
+DAQDataFormats/          NovaDAQConventions/      bin/
+DAQMessages/             NovaDAQMonitorClient/    doc/
+DAQStatusTriggers/       NovaDAQUtilities/        include/
+DAQUnpackUtils/          NovaTimingUtilities/     job/
+DDTBaseDataProducts/     NuETriggers/             lib/
+DDTCore/                 NuMuTriggers/            logs/
+DDTDemo/                 PackageVersion/          man/
+DDTGlobalConfigurations/ PatRec/                  results/
+DDTMessageSender/        SRT_NOVADDT/             rms/
+DDTPrescale/             ShmMilliBlock/           setup/
+DDTUtilities/            ShmRdWr/                 tmp/
+ExoticsTriggers/         SlowMonopoleTrigger/     
+GNUmakefile              SoftRelTools/            
+-bash-4.1$ pwd
+/nova/app/users/melashri/srt
+-bash-4.1$ 
+-bash-4.1$ ls
+GNUmakefile  Monopole  bin  doc  include  job  lib  man  results  tmp
+-bash-4.1$ addpkg_svn -h DDTTools
+Adding package "DDTTools" to ".".
+svn co svn+ssh://p-novaart@cdcvs.fnal.gov/cvs/projects/novaart/pkgs.svn/trunk//DDTTools DDTTools
+A    DDTTools/DDTHelpers.cxx
+A    DDTTools/DDTExtensions.h
+A    DDTTools/DDTHelpers.h
+A    DDTTools/GNUmakefile
+A    DDTTools/DDTExtensions.cxx
+A    DDTTools/CMakeLists.txt
+Checked out revision 35519.
+-bash-4.1$ pwd
+/nova/app/users/melashri/srt
+-bash-4.1$ ls
+DDTTools  GNUmakefile  Monopole  bin  doc  include  job  lib  man  results  tmp
+-bash-4.1$ make DDTTools.all
+<**all**> DDTTools
+<**compiling**> DDTExtensions.cxx
+<**compiling**> DDTHelpers.cxx
+In file included from /nova/app/users/melashri/srt/DDTTools/DDTHelpers.cxx:1:0:
+/nova/app/users/melashri/srt/include/DDTTools/DDTHelpers.h:4:43: fatal error: canvas/Persistency/Common/Ptr.h: No such file or directory
+ #include "canvas/Persistency/Common/Ptr.h"
+                                           ^
+compilation terminated.
+mv: cannot stat `/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/DDTTools/srt_dep_tmp.16088': No such file or directory
+make[1]: *** [/nova/app/users/melashri/srt/tmp/Linux2.6-GCC-maxopt/DDTTools/libDDTTools-shared/DDTHelpers.o] Error 1
+make: *** [DDTTools.all] Error 2
+-bash-4.1$ echo $SRT_PUBLIC_CONTEXT 
+/cvmfs/nova.opensciencegrid.org/novasoft/slf6/novasoft/releases/S16-09-13
+-bash-4.1$ rmpkg -f DDTTools/
+-bash-4.1$ ls
+GNUmakefile  Monopole  bin  doc  include  job  lib  man  results  tmp
+-bash-4.1$ cd Monopole/
+-bash-4.1$ svn info
+Path: .
+URL: svn+ssh://p-novaart@cdcvs.fnal.gov/cvs/projects/novaart/pkgs.svn/tags/S16-09-13/Monopole
+Repository Root: svn+ssh://p-novaart@cdcvs.fnal.gov/cvs/projects/novaart/pkgs.svn
+Repository UUID: 42286b90-2e16-4323-8552-92d8e493c5d4
+Revision: 35518
+Node Kind: directory
+Schedule: normal
+Last Changed Author: antoshki
+Last Changed Rev: 21121
+Last Changed Date: 2016-07-12 06:40:59 -0500 (Tue, 12 Jul 2016)
+
+-bash-4.1$ cd ..
+-bash-4.1$ ls
+GNUmakefile  Monopole  bin  doc  include  job  lib  man  results  tmp
+-bash-4.1$ addpkg_svn DDTTools S16-09-13
+Adding package "DDTTools" to ".".
+svn co svn+ssh://p-novaart@cdcvs.fnal.gov/cvs/projects/novaart/pkgs.svn/tags/S16-09-13//DDTTools DDTTools
+A    DDTTools/DDTHelpers.cxx
+A    DDTTools/DDTExtensions.h
+A    DDTTools/DDTHelpers.h
+A    DDTTools/DDTExtensions.cxx
+A    DDTTools/CMakeLists.txt
+Checked out revision 35519.
+-bash-4.1$ make DDTTools.all
+make: *** No rule to make target `DDTTools.all'.  Stop.
+-bash-4.1$ pwd
+/nova/app/users/melashri/srt
+-bash-4.1$ ls
+DDTTools  GNUmakefile  Monopole  bin  doc  include  job  lib  man  results  tmp
+-bash-4.1$ cd DDTTools/
+-bash-4.1$ ls
+CMakeLists.txt     DDTExtensions.h  DDTHelpers.h
+DDTExtensions.cxx  DDTHelpers.cxx
+-bash-4.1$ cd ..
+-bash-4.1$ ls
+DDTTools  GNUmakefile  Monopole  bin  doc  include  job  lib  man  results  tmp
+-bash-4.1$ make Monopole.all
+<**all**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+<**compiling**> Cluster.cxx
+/nova/app/users/melashri/srt/Monopole/Cluster.cxx: In lambda function:
+/nova/app/users/melashri/srt/Monopole/Cluster.cxx:89:16: warning: unused variable ‘n_contained_hit’ [-Wunused-variable]
+       unsigned n_contained_hit = 0;
+                ^
+<**compiling**> SlowMonopoleTrigger.cxx
+/nova/app/users/melashri/srt/Monopole/SlowMonopoleTrigger.cxx: In lambda function:
+/nova/app/users/melashri/srt/Monopole/SlowMonopoleTrigger.cxx:187:16: warning: unused variable ‘n_contained_hit’ [-Wunused-variable]
+       unsigned n_contained_hit = 0;
+                ^
+<**compiling**> Track.cxx
+<**compiling**> Track3D.cxx
+/nova/app/users/melashri/srt/Monopole/Track3D.cxx: In member function ‘bool mono::Track3D::time_fit(const mono::Track2D&, double&, double&) const’:
+/nova/app/users/melashri/srt/Monopole/Track3D.cxx:182:10: warning: unused variable ‘v0’ [-Wunused-variable]
+   double v0 = mean.at("v") - dvdt * mean.at("t");
+          ^
+/nova/app/users/melashri/srt/Monopole/Track3D.cxx:183:10: warning: unused variable ‘z0’ [-Wunused-variable]
+   double z0 = mean.at("z") - dzdt * mean.at("t");
+          ^
+<**building library**> libMonopole
+<**compiling**> DataCheckMonopole_module.cc
+<**linking**> libDataCheckMonopole_module.so
+<**compiling**> EventSelector_module.cc
+/nova/app/users/melashri/srt/Monopole/EventSelector_module.cc: In member function ‘virtual bool mono::EventSelector::filter(art::Event&)’:
+/nova/app/users/melashri/srt/Monopole/EventSelector_module.cc:97:12: warning: unused variable ‘c’ [-Wunused-variable]
+       auto c = Constants::SPEED_OF_LIGHT;
+            ^
+<**linking**> libEventSelector_module.so
+<**compiling**> HighEnergySliceRemoval_module.cc
+<**linking**> libHighEnergySliceRemoval_module.so
+<**compiling**> MonopoleCluster_module.cc
+<**linking**> libMonopoleCluster_module.so
+<**compiling**> MonopoleTrack_module.cc
+<**linking**> libMonopoleTrack_module.so
+--->> genreflex: INFO: Using gccxml from /cvmfs/nova.opensciencegrid.org/externals/gccxml/v0_9_20150423/Linux64bit+2.6-2.12/bin/gccxml
+--->> genreflex: INFO: Parsing file classes.h with GCC_XML OK
+--->> genreflex: INFO: Generating Reflex Dictionary
+class mono::Track3D
+class std::vector<mono::Track3D>
+class mono::Track2D
+class std::vector<mono::Track2D>
+class art::Wrapper<std::vector<mono::Track3D> >
+class art::Wrapper<std::vector<mono::Track2D> >
+class art::Wrapper<mono::Track3D>
+class art::Wrapper<mono::Track2D>
+<**compiling**> Monopole_dict.cc
+<**linking**> libMonopole_dict.so
+<**checking class version numbers**> libMonopole_dict.so
+Message: (file "/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libMonopole_dict.so", line -1) dlopen error: /nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libMonopole.so: undefined symbol: _ZN14daqdataformats28calculateShiftFromAGivenMaskEj
+Traceback (most recent call last):
+  File "/cvmfs/nova.opensciencegrid.org/externals/art/v1_17_06/slf6.x86_64.e9.nu.prof/bin/checkClassVersion", line 271, in <module>
+    main()
+  File "/cvmfs/nova.opensciencegrid.org/externals/art/v1_17_06/slf6.x86_64.e9.nu.prof/bin/checkClassVersion", line 143, in main
+    if (options.library is not None) and (ROOT.gSystem.Load(options.library) != 0):
+RuntimeError: (file "/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libMonopole_dict.so", line -1) Failed to load Dynamic link library /nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libMonopole_dict.so
+make[1]: *** [/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libMonopole_dict.so] Error 1
+make: *** [Monopole.all] Error 2
+-bash-4.1$ make Monopole.clean
+<**clean**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+GNUmakefile:33: *** missing separator.  Stop.
+make: *** [Monopole.clean] Error 2
+-bash-4.1$ pwd
+/nova/app/users/melashri/srt
+-bash-4.1$ emacs -nw Monopole/GNUmakefile
+-bash-4.1$ make Monopole.clean
+<**clean**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+-bash-4.1$ make Monopole.all
+<**all**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+<**compiling**> Cluster.cxx
+/nova/app/users/melashri/srt/Monopole/Cluster.cxx: In lambda function:
+/nova/app/users/melashri/srt/Monopole/Cluster.cxx:89:16: warning: unused variable ‘n_contained_hit’ [-Wunused-variable]
+       unsigned n_contained_hit = 0;
+                ^
+<**compiling**> SlowMonopoleTrigger.cxx
+/nova/app/users/melashri/srt/Monopole/SlowMonopoleTrigger.cxx: In lambda function:
+/nova/app/users/melashri/srt/Monopole/SlowMonopoleTrigger.cxx:187:16: warning: unused variable ‘n_contained_hit’ [-Wunused-variable]
+       unsigned n_contained_hit = 0;
+                ^
+<**compiling**> Track.cxx
+<**compiling**> Track3D.cxx
+/nova/app/users/melashri/srt/Monopole/Track3D.cxx: In member function ‘bool mono::Track3D::time_fit(const mono::Track2D&, double&, double&) const’:
+/nova/app/users/melashri/srt/Monopole/Track3D.cxx:182:10: warning: unused variable ‘v0’ [-Wunused-variable]
+   double v0 = mean.at("v") - dvdt * mean.at("t");
+          ^
+/nova/app/users/melashri/srt/Monopole/Track3D.cxx:183:10: warning: unused variable ‘z0’ [-Wunused-variable]
+   double z0 = mean.at("z") - dzdt * mean.at("t");
+          ^
+<**building library**> libMonopole
+/usr/bin/ld: cannot find -lDAQDataFormats
+collect2: error: ld returned 1 exit status
+make[1]: *** [/nova/app/users/melashri/srt/lib/Linux2.6-GCC-maxopt/libMonopole.so] Error 1
+make: *** [Monopole.all] Error 2
+-bash-4.1$ less /cvmfs/nova.opensciencegrid.org/novasoft/slf6/novasoft/releases/S16-09-13/SRT_NOVA/SoftRelTools/arch_spec_novadaq.mk 
+-bash-4.1$ make Monopole.clean
+<**clean**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+-bash-4.1$ make Monopole.all
+<**all**> Monopole
+SRT_NOVA/special/pre_standard.mk:16: genreflex case found
+<**compiling**> Cluster.cxx
+/nova/app/users/melashri/srt/Monopole/Cluster.cxx: In lambda function:
+/nova/app/users/melashri/srt/Monopole/Cluster.cxx:89:16: warning: unused variable ‘n_contained_hit’ [-Wunused-variable]
+       unsigned n_contained_hit = 0;
+                ^
+<**compiling**> SlowMonopoleTrigger.cxx
+/nova/app/users/melashri/srt/Monopole/SlowMonopoleTrigger.cxx: In lambda function:
+/nova/app/users/melashri/srt/Monopole/SlowMonopoleTrigger.cxx:187:16: warning: unused variable ‘n_contained_hit’ [-Wunused-variable]
+       unsigned n_contained_hit = 0;
+                ^
+<**compiling**> Track.cxx
+<**compiling**> Track3D.cxx
+/nova/app/users/melashri/srt/Monopole/Track3D.cxx: In member function ‘bool mono::Track3D::time_fit(const mono::Track2D&, double&, double&) const’:
+/nova/app/users/melashri/srt/Monopole/Track3D.cxx:182:10: warning: unused variable ‘v0’ [-Wunused-variable]
+   double v0 = mean.at("v") - dvdt * mean.at("t");
+          ^
+/nova/app/users/melashri/srt/Monopole/Track3D.cxx:183:10: warning: unused variable ‘z0’ [-Wunused-variable]
+   double z0 = mean.at("z") - dzdt * mean.at("t");
+          ^
+<**building library**> libMonopole
+<**compiling**> DataCheckMonopole_module.cc
+<**linking**> libDataCheckMonopole_module.so
+<**compiling**> EventSelector_module.cc
+/nova/app/users/melashri/srt/Monopole/EventSelector_module.cc: In member function ‘virtual bool mono::EventSelector::filter(art::Event&)’:
+/nova/app/users/melashri/srt/Monopole/EventSelector_module.cc:97:12: warning: unused variable ‘c’ [-Wunused-variable]
+       auto c = Constants::SPEED_OF_LIGHT;
+            ^
+<**linking**> libEventSelector_module.so
+<**compiling**> HighEnergySliceRemoval_module.cc
+<**linking**> libHighEnergySliceRemoval_module.so
+<**compiling**> MonopoleCluster_module.cc
+<**linking**> libMonopoleCluster_module.so
+<**compiling**> MonopoleTrack_module.cc
+<**linking**> libMonopoleTrack_module.so
+--->> genreflex: INFO: Using gccxml from /cvmfs/nova.opensciencegrid.org/externals/gccxml/v0_9_20150423/Linux64bit+2.6-2.12/bin/gccxml
+--->> genreflex: INFO: Parsing file classes.h with GCC_XML OK
+--->> genreflex: INFO: Generating Reflex Dictionary
+class mono::Track3D
+class std::vector<mono::Track3D>
+class mono::Track2D
+class std::vector<mono::Track2D>
+class art::Wrapper<std::vector<mono::Track3D> >
+class art::Wrapper<std::vector<mono::Track2D> >
+class art::Wrapper<mono::Track3D>
+class art::Wrapper<mono::Track2D>
+<**compiling**> Monopole_dict.cc
+<**linking**> libMonopole_dict.so
+<**checking class version numbers**> libMonopole_dict.so
+<**compiling**> Monopole_map.cc
+<**linking**> libMonopole_map.so
+<**compiling**> Monopole_module.cc
+/nova/app/users/melashri/srt/Monopole/Monopole_module.cc: In member function ‘virtual void mono::Monopole::analyze(const art::Event&)’:
+/nova/app/users/melashri/srt/Monopole/Monopole_module.cc:157:5: warning: unused variable ‘event_time’ [-Wunused-variable]
+     event_time(raw_triggers->front().fTriggerTimingMarker_TimeStart);
+     ^
+<**linking**> libMonopole_module.so
+<**compiling**> SlowMonopoleAna_module.cc
+<**linking**> libSlowMonopoleAna_module.so
+<**compiling**> SlowMonopoleFilt_module.cc
+<**linking**> libSlowMonopoleFilt_module.so
+<**installing JOB file**> DataCheckMonopole.fcl
+<**installing JOB file**> EventSelector.fcl
+<**installing JOB file**> HighEnergySliceRemoval.fcl
+<**installing JOB file**> Monopole.fcl
+<**installing JOB file**> MonopoleCluster.fcl
+<**installing JOB file**> MonopoleTrack.fcl
+<**installing JOB file**> SlowMonopoleAna.fcl
+<**installing JOB file**> SlowMonopoleFilt.fcl
+<**installing JOB file**> dcmonojob.fcl
+<**installing JOB file**> monojob.fcl
+<**installing JOB file**> smmgenjob.fcl
+<**installing JOB file**> smmsinglepgenjob.fcl
+<**installing JOB file**> smtanajob.fcl
+-bash-4.1$ orca@Positive-Space:~$ script log.01012015
+-bash: orca@Positive-Space:~$: command not found
+-bash-4.1$ 
