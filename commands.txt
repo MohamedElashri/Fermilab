@@ -17,3 +17,7 @@ count_events --hr <file>
 # run nova jobs 
 nova -c <filejob.fcl> -s <daqfile.root>
 
+# add sam defintion example 
+
+samweb create-definition Slowmono_epoch2_analysis "run_number 20753-32397 and online.detector fardet and online.stream DDslowmono and data_tier=raw"
+
