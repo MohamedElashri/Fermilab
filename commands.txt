@@ -21,3 +21,15 @@ nova -c <filejob.fcl> -s <daqfile.root>
 
 samweb create-definition Slowmono_epoch2_analysis "run_number 20753-32397 and online.detector fardet and online.stream DDslowmono and data_tier=raw"
 
+
+# validation art 2 raw data 
+fardet_r00034228_s00_DDslowmono.raw
+fardet_r00034228_s01_DDslowmono.raw
+fardet_r00034228_s03_DDslowmono.raw
+fardet_r00034228_s02_DDslowmono.raw
+fardet_r00034228_s06_DDslowmono.raw
+fardet_r00034228_s07_DDslowmono.raw
+fardet_r00034228_s04_DDslowmono.raw
+fardet_r00034228_s05_DDslowmono.raw
+fardet_r00034228_s08_DDslowmono.raw
+fardet_r00034228_s09_DDslowmono.raw
