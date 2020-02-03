@@ -27,19 +27,6 @@ Last login: Sat Feb 23 14:47:31 2019 from 192.190.216.21
        Fermilab  policy  and  rules for computing, including appropriate
        use, may be found at http://www.fnal.gov/cd/main/cpolicy.html
 ------------------------------------------------------------------------------
-                     ..::Powered by ECF-SSI::..                      
-
-   Hostname: novagpvm05.fnal.gov         OS Release: SLF 6.6 (Ramsey)          
-         IP: 131.225.67.17                   Subnet: 255.255.255.0             
-
-     Kernel: 2.6.32-754.6.3                    Arch: x86_64                    
-        RAM: 11.63 GiB                         Swap: 2.00 GiB                  
-      Cores: 4                              Virtual: rhev                      
-
- SSH Logins: 4                             Load Avg: 0.0 0.05 0.09             
-
-       Help: https://ssiwiki.fnal.gov/wiki/Interactive_Server_Facility         
-------------------------------------------------------------------------------
 -bash-4.1$ setup_nova -b maxopt -r S16-09-13
 packet_write_wait: Connection to 131.225.67.17 port 22: Broken pipe
 mib@mib-VirtualBox:~$ ssh fermi
@@ -71,18 +58,6 @@ Last login: Sat Feb 23 12:10:56 2019 from 192.190.216.21
        Fermilab  policy  and  rules for computing, including appropriate
        use, may be found at http://www.fnal.gov/cd/main/cpolicy.html
 ------------------------------------------------------------------------------
-                     ..::Powered by ECF-SSI::..                      
-
-   Hostname: novagpvm02.fnal.gov         OS Release: SLF 6.6 (Ramsey)          
-         IP: 131.225.67.73                   Subnet: 255.255.255.0             
-
-     Kernel: 2.6.32-754.6.3                    Arch: x86_64                    
-        RAM: 11.63 GiB                         Swap: 2.00 GiB                  
-      Cores: 4                              Virtual: rhev                      
-
- SSH Logins: 5                             Load Avg: 0.04 0.5 1.21             
-
-       Help: https://ssiwiki.fnal.gov/wiki/Interactive_Server_Facility         
 ------------------------------------------------------------------------------
 -bash-4.1$ setup_nova -b maxopt -r S16-09-13
 nutools version v1_21_01 NOT GREATER THAN v2_02_00; DO NOTHING
