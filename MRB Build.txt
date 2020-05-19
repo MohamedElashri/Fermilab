@@ -1,0 +1,26 @@
+source /cvmfs/fermilab.opensciencegrid.org/products/common/etc/setups.sh
+export PRODUCTS=${PRODUCTS}:/cvmfs/nova.opensciencegrid.org/externals/:/cvmfs/nova.opensciencegrid.org/pidlibs/products
+
+setup mrb
+setup ninja v1_8_2
+
+export MRB_PROJECT=nova 
+cd /nova/app/users/mfrank/src
+mkdir sn
+cd sn
+
+mrb newDev -v develop -q e9:s28:prof
+source localProducts_nova_develop_e9_s28_prof/setup
+cd srcs/
+
+svn co svn+ssh://p-novaddt@cdcvs.fnal.gov/cvs/projects/novaddt/novaddt.svn/trunk  novaddt
+svn co svn+ssh://p-novaart@cdcvs.fnal.gov/cvs/projects/novaart/pkgs.svn/trunk novasoft
+
+% OR:
+svn co svn+ssh://p-novaart@cdcvs.fnal.gov/cvs/projects/novaart/pkgs.svn/tags/S16-10-07 novasoft
+mrb uc
+
+% Edit novasoft product_deps to use devel version of novaddt
+cd $MRB_BUILDDIR
+mrbsetenv
+time mrb i -j2 --tee --generator ninja
