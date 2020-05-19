@@ -21,6 +21,12 @@ nova -c <filejob.fcl> -s <daqfile.root>
 
 samweb create-definition Slowmono_epoch2_analysis "run_number 20753-32397 and online.detector fardet and online.stream DDslowmono and data_tier=raw"
 
+# Monopole plotting 
+https://cdcvs.fnal.gov/redmine/projects/novaart/repository/devs/show/trunk/users/mstrait
+# All of the input files (trees) required can be found here  > 100 gain
+/nova/ana/users/mfrank/for_matt/paper_plots/data/
+
+
 
 # validation art 2 raw data 
 fardet_r00034228_s00_DDslowmono.raw
