@@ -32,6 +32,10 @@ du -sh ./*/
 $ my quota 
 quota -s
 
+# fix the problem of bashrc
+. ~/.bashrc
+
+
 
 
 # validation art 2 raw data 
