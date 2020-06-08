@@ -26,6 +26,9 @@ https://cdcvs.fnal.gov/redmine/projects/novaart/repository/devs/show/trunk/users
 # All of the input files (trees) required can be found here  > 100 gain
 /nova/ana/users/mfrank/for_matt/paper_plots/data/
 
+# get size of folders
+du -sh ./*/
+
 
 
 # validation art 2 raw data 
