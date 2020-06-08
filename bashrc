@@ -33,7 +33,7 @@ alias mywatch="watch -n 60 \"condor_q melashri | tail -1\""
 alias latest="ls -halFt | head"
 
 # I want to get this file (later)
-#alias inspect_file='python /nova/app/users/mfrank/src/InspectFile.py -i'
+alias inspect_file='python /nova/app/users/melashri/src/InspectFile.py -i'
 
 
 
