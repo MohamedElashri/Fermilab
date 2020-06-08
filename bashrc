@@ -218,13 +218,13 @@ function build_grid_gen
 
 {
 
-    setup_ups_cvmfs /nova/ana/users/mfrank/libs/mono_190610_S16-10-07/localProducts_nova_develop_e9_s28_prof/
+    setup_ups_cvmfs /nova/ana/users/melashri/libs/mono_190610_S16-10-07/localProducts_nova_develop_e9_s28_prof/
 
-    cd /nova/ana/users/mfrank/libs/mono_190610_S16-10-07/build_grid
+    cd /nova/ana/users/melashri/libs/mono_190610_S16-10-07/build_grid
 
 
 
-    source /nova/app/users/mfrank/src/mono_190610_S16-10-07/srcs/novasoft/ups/setup_for_development -p e9:s28:grid
+    source /nova/app/users/melashri/src/mono_190610_S16-10-07/srcs/novasoft/ups/setup_for_development -p e9:s28:grid
 
 
 
@@ -232,7 +232,7 @@ function build_grid_gen
 
     echo "To Build: "
 
-    echo "  buildtool --tee -j2 -i -I /nova/ana/users/mfrank/libs/mono_190610_S16-10-07/localProducts_nova_develop_e9_s28_prof/"
+    echo "  buildtool --tee -j2 -i -I /nova/ana/users/melashri/libs/mono_190610_S16-10-07/localProducts_nova_develop_e9_s28_prof/"
 
 }
 
@@ -242,13 +242,13 @@ function run_mono
 
 {
 
-    setup_ups_cvmfs /nova/ana/users/mfrank/libs/mono_180619_S16-09-13/localProducts_nova_develop_e9_s28_prof/
+    setup_ups_cvmfs /nova/ana/users/melashri/libs/mono_180619_S16-09-13/localProducts_nova_develop_e9_s28_prof/
 
     setup novasoft develop -q e9:s28:prof
 
 
 
-    cd /nova/app/users/mfrank/src/mono_180619_S16-09-13
+    cd /nova/app/users/melashri/src/mono_180619_S16-09-13
 
 }
 
@@ -258,13 +258,13 @@ function run_gen
 
 {
 
-    setup_ups_cvmfs /nova/ana/users/mfrank/libs/mono_190610_S16-10-07/localProducts_nova_develop_e9_s28_prof/
+    setup_ups_cvmfs /nova/ana/users/melashri/libs/mono_190610_S16-10-07/localProducts_nova_develop_e9_s28_prof/
 
     setup novasoft develop -q e9:s28:prof
 
 
 
-    cd /nova/app/users/mfrank/src/mono_190610_S16-10-07/
+    cd /nova/app/users/melashri/src/mono_190610_S16-10-07/
 
 }
 
@@ -286,7 +286,7 @@ function run_mono_S19
 
 
 
-    cd /nova/app/users/mfrank/src/mono_190613_S19-06-03
+    cd /nova/app/users/melashri/src/mono_190613_S19-06-03
 
 }
 
