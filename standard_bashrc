@@ -1,0 +1,18 @@
+function setup_novaddt {
+    echo ""
+    echo "NOvA DDT setup"
+    echo ""
+    echo "Setting SRT_DIST, EXTERNALS"
+    echo "Sourcing generic setup_novaddt script"
+    source /grid/fermiapp/nova/novaddt/srt/srt.sh
+    export EXTERNALS=/grid/fermiapp/products/nova/externals
+    source $SRT_DIST/products/setup
+    source $SRT_DIST/setup/setup_novaddt.sh "$@"
+    echo "Working directory: $PWD"
+}
+
+
+function setup_nova {
+  source /cvmfs/nova.opensciencegrid.org/novasoft/slf6/novasoft/setup/setup_nov$
+  cd /nova/app/users/melashri
+}
