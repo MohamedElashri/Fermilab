@@ -308,7 +308,7 @@ function submit_grid
 
 {
 
-    cd /nova/app/users/mfrank/src/mono/submit_grid
+    cd /nova/app/users/melashri/src/mono/submit_grid
 
 
 
@@ -324,7 +324,7 @@ function submit_grid_gen
 
 {
 
-    cd /nova/app/users/mfrank/src/gen/submit_grid
+    cd /nova/app/users/melashri/src/gen/submit_grid
 
 
 
@@ -354,7 +354,7 @@ function get_logs
 
     setup_grid
 
-    cd /nova/ana/users/mfrank/samout/
+    cd /nova/ana/users/melashri/samout/
 
 
 
