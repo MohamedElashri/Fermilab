@@ -29,6 +29,9 @@ https://cdcvs.fnal.gov/redmine/projects/novaart/repository/devs/show/trunk/users
 # get size of folders
 du -sh ./*/
 
+$ my quota 
+quota -s
+
 
 
 # validation art 2 raw data 
