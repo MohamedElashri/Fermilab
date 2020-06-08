@@ -28,7 +28,7 @@ alias mymake="make 2>&1 | tee compile.log | grep -A2 --color \"error\""
 
 alias mycmake="date +\"Build Time: \"%A\\ %k:%M:%S && make -j install 2>&1 | tee compile.log | grep -A2 --color \" error\|warning\""
 
-alias mywatch="watch -n 60 \"condor_q mfrank | tail -1\""
+alias mywatch="watch -n 60 \"condor_q melashri | tail -1\""
 
 alias latest="ls -halFt | head"
 
@@ -39,7 +39,7 @@ alias latest="ls -halFt | head"
 
 alias go_nsrc='cd /nova/app/users/melashri/src'
 
-alias go_ndata='cd /nova/ana/melashri/mfrank/'
+alias go_ndata='cd /nova/ana/users/melashri/'
 
 alias go_pnfs='cd /pnfs/nova/scratch/users/melashri/'
 
@@ -278,7 +278,7 @@ function run_mono_S19
 
     export PRODUCTS=${PRODUCTS}:/cvmfs/nova.opensciencegrid.org/externals/:/cvmfs/nova.opensciencegrid.org/pidlibs/products
 
-    export PRODUCTS=${PRODUCTS}:/nova/ana/users/mfrank/libs/mono_190613_S19-06-03/localProducts_nova_develop_e15_prof/
+    export PRODUCTS=${PRODUCTS}:/nova/ana/users/melashri/libs/mono_190613_S19-06-03/localProducts_nova_develop_e15_prof/
 
 
 
@@ -342,7 +342,7 @@ function watch_grid
 
     setup_grid
 
-    watch -n 30 "jobsub_q --user=mfrank | tail -1"
+    watch -n 30 "jobsub_q --user=melashri | tail -1"
 
 }
 
@@ -366,7 +366,7 @@ function get_logs
 
     echo "To retrieve logs:"
 
-    echo "  jobsub_fetchlog --user=mfrank --unzipdir=logs/ --jobid="
+    echo "  jobsub_fetchlog --user=melashri --unzipdir=logs/ --jobid="
 
 }
 
