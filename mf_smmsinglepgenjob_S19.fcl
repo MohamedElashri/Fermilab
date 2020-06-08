@@ -1,0 +1,93 @@
+#include "services.fcl"
+#include "SingleGen.fcl"
+#include "G4Gen.fcl"
+#include "ReadoutSim.fcl"
+#include "ImprovedTransport.fcl"
+#include "Filter.fcl"
+
+process_name: MonopoleGenerator
+
+services:
+{
+  TFileService: { fileName: "Monopole_MC_Hist.root" closeFileFast: false }
+  TimeTracker: {}
+  RandomNumberGenerator: {}
+  @table::standard_services
+}
+
+services.Geometry: @local::fd_geo
+
+source:
+{
+  module_type: EmptyEvent
+  maxEvents:   1000
+  firstRun:    1
+  firstSubRun: 1
+  firstEvent:  1
+}
+
+physics:
+{
+  producers:
+  {
+    generator: @local::standard_singlep
+    geantgen:  @local::standard_geant4
+#    geantgen:  @local::birksmodB_geant4
+#    geantgen:  @local::birksmodC_geant4
+    photrans:  @local::standard_photrans
+#    photrans:  @local::birksmodB_photrans
+#    photrans:  @local::birksmodC_photrans
+    daq:       @local::standard_rsim
+    rns:       { module_type: "RandomNumberSaver" }
+  }
+
+  filters:
+  {
+ #   filt:      @local::hits_in_detector	
+  }
+
+  simulate: [ generator, geantgen, photrans, daq, rns ] 
+  out:      [ writer ]
+}
+
+outputs:
+{
+  writer:
+  {
+    module_type: RootOutput
+    fileName:    "Monopole_MC.g4.root"
+  }
+}
+
+physics.producers.geantgen.G4AlgPSet.G4PhysListName: " QGSP_BERT ; g4n::NovaG4MonopolePhysics ( /monopole/setup 1. 0. 1.0e16 GeV ) (  /monopole/magCharge 1 , /monopole/elCharge 0 )"
+
+physics.producers.generator.PDG:               [ 42 ]    # = Monopole
+# physics.producers.generator.P0:                [ 1.e13 ] # -> beta = 10^-3
+physics.producers.generator.P0:                [ 3.16e12 ] # -> beta = 10^-3.5
+# physics.producers.generator.P0:                [ 1.e12 ] # -> beta = 10^-4
+physics.producers.generator.SigmaP:            [ 0 ] # sigma of gaussian
+physics.producers.generator.PDist:             [ 1 ] # gaussian distribution
+
+physics.producers.generator.X0:                [ 2.0 ]
+physics.producers.generator.Y0:                [ 2.0 ]
+physics.producers.generator.Z0:                [ 1000.0 ]
+physics.producers.generator.SigmaX:            [ 0.1 ] # sigma of gaussian
+physics.producers.generator.SigmaY:            [ 0.1 ] # sigma of gaussian
+physics.producers.generator.SigmaZ:            [ 0.1 ] # sigma of gaussian
+physics.producers.generator.PosDist:           [ 1 ] # gaussian distribution
+
+physics.producers.generator.CosZ0:             [ 1.0 ]
+physics.producers.generator.SigmaCosZ:         [ 0 ] # sigma of gaussian
+physics.producers.generator.CosZDist:          [ 1 ] # gaussian distribution
+
+physics.producers.generator.PhiXY0:            [ 0 ]
+physics.producers.generator.SigmaPhiXY:        [ 0 ] # sigma of gaussian
+physics.producers.generator.PhiDist:           [ 1 ] # gaussian distribution
+
+physics.producers.generator.T0:                [ 0 ]
+physics.producers.generator.SigmaT:            [ 0 ]
+
+physics.producers.daq.fd.NumClockticksInSpill: 80000    # = 5 ms
+physics.producers.daq.fd.ScaleEmptyCellNoiseRate: 0     # no noise in empty cell
+physics.producers.daq.fd.DoFlashers:              true  # simulate FEB sag
+physics.producers.daq.fd.ForceGain:               100
