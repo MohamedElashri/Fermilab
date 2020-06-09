@@ -35,6 +35,11 @@ quota -s
 # fix the problem of bashrc
 . ~/.bashrc
 
+# or edit ~/.bash_profile using 
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
 
 
 
