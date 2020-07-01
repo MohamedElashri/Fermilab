@@ -21,3 +21,14 @@ Dataset definition 'melashri_slow_s29_test' has been created with id 4893651
 
 ## created with 
 samweb create-definition melashri_slow_s29_test "run_number 20753 and Online.Subrun 29 and online.detector fardet and online.stream DDslowmono and data_tier=raw"
+
+
+# good test with root files 
+
+## This is the correct format for monojob.sh grid script 
+
+Dataset definition 'melashri_slow_s29_test_2' has been created with id 4894891
+
+## created with 
+samweb create-definition melashri_slow_s29_test_2 "run_number 20753-20800 and Online.Subrun 29 and online.detector fardet and online.stream DDslowmono and data_tier=root"
+
