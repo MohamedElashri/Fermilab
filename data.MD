@@ -27,8 +27,7 @@ samweb create-definition melashri_slow_s29_test "run_number 20753 and Online.Sub
 
 ## This is the correct format for monojob.sh grid script 
 
-Dataset definition 'melashri_slow_s29_test_2' has been created with id 4894891
+Dataset definition 'melashri_slowmonopole_epoch2_root_test' has been created with id melashri_slowmonopole_epoch2_root_test
 
 ## created with 
-samweb create-definition melashri_slow_s29_test_2 "run_number 20753-20800 and Online.Subrun 29 and online.detector fardet and online.stream DDslowmono and data_tier=root"
-
+samweb create-definition melashri_slowmonopole_epoch2_root_test "online.detector fardet and data_stream ddslowmono and online.runnumber >= 20753 and online.runnumber <= 20800 and Online.Subrun 29 and data_tier artdaq"
