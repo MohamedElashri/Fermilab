@@ -31,3 +31,13 @@ Dataset definition 'melashri_slowmonopole_epoch2_root_test' has been created wit
 
 ## created with 
 samweb create-definition melashri_slowmonopole_epoch2_root_test "online.detector fardet and data_stream ddslowmono and online.runnumber >= 20753 and online.runnumber <= 20800 and Online.Subrun 29 and data_tier artdaq"
+
+
+## This is the correct format for monojob.sh grid script and analysis 
+Dataset definition 'melashri_slowmonopole_epoch2_root' has been created with id 4896831
+
+
+## created with 
+
+novagpvm06:submit_grid> samweb create-definition melashri_slowmonopole_epoch2_root "online.detector fardet and data_stream ddslowmono and online.runnumber >= 20753 and online.runnumber <= 22019 and Online.Subrun 29 and data_tier artdaq"
+
