@@ -1,0 +1,15 @@
+n events: 74017
+n subruns - 14 DB - DQ: 0
+n subruns - 14 DB - DQ 14 Good DB: 0
+n subruns - 14 DB - DQ Good: 0
+n subruns - total: 715
+n subruns - unique: 707
+prescale total: 120417
+run time - 14 DB: 6.8754e+06
+run time - 14 DB - DQ 14 Good DB: 0
+run time - 14 DB - DQ Good: 0
+run time - 14 DB - DQ Scaled: 0
+run time - total: 6.90352e+06
+unique subruns: 707
+overall prescale: 1.62688
+prescale efficiency: 0.614672
