@@ -41,3 +41,6 @@ Dataset definition 'melashri_slowmonopole_epoch2_root' has been created with id 
 
 novagpvm06:submit_grid> samweb create-definition melashri_slowmonopole_epoch2_root "online.detector fardet and data_stream ddslowmono and online.runnumber >= 20753 and online.runnumber <= 22019 and Online.Subrun 29 and data_tier artdaq"
 
+
+## MC fcl datasaet 
+melashri_slownone_MC_gain_150_trial_8
