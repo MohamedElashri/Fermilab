@@ -47,3 +47,9 @@ melashri_slownone_MC_gain_150_trial_8
 
 ## MC fcl dataset
 melashri_MC_slowmono_testfile
+
+## Complete Analysis Data 
+melashri_slowmonopole_epoch2_150_gain
+
+### created with 
+samweb create-definition melashri_slowmonopole_epoch2_150_gain "online.detector fardet and data_stream ddslowmono and online.runnumber >= 20753 and online.runnumber <= 23419 and Online.Subrun 29 and data_tier artdaq"
