@@ -43,4 +43,7 @@ novagpvm06:submit_grid> samweb create-definition melashri_slowmonopole_epoch2_ro
 
 
 ## MC fcl datasaet 
-melashri_slownone_MC_gain_150_trial_8
+melashri_slownone_MC_gain_150_trial_8 
+
+## MC fcl dataset
+melashri_MC_slowmono_testfile
