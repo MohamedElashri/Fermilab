@@ -57,7 +57,7 @@ samweb create-definition melashri_slowmonopole_epoch2_150_gain "online.detector 
 # FCL datasets 
 
 ## to test MC generation (one file)
-test_slowmono_grid_150_gain
+test_slowmono_grid_150_gain_MC
 
 ### created by 
-sam_add_dataset --data_tier=fcl -d /pnfs/nova/scratch/users/melashri/gen_fcls/test -n test_slowmono_grid_150_gain
+sam_add_dataset --data_tier=fcl -d /pnfs/nova/scratch/users/melashri/gen_fcls/test -n test_slowmono_grid_150_gain_MC
