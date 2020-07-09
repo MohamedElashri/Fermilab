@@ -53,3 +53,11 @@ melashri_slowmonopole_epoch2_150_gain
 
 ### created with 
 samweb create-definition melashri_slowmonopole_epoch2_150_gain "online.detector fardet and data_stream ddslowmono and online.runnumber >= 20753 and online.runnumber <= 23419 and Online.Subrun 29 and data_tier artdaq"
+
+# FCL datasets 
+
+## to test MC generation (one file)
+test_slowmono_grid_150_gain
+
+### created by 
+sam_add_dataset --data_tier=fcl -d /pnfs/nova/scratch/users/melashri/gen_fcls/test -n test_slowmono_grid_150_gain
