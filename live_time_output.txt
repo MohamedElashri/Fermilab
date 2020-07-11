@@ -13,3 +13,23 @@ run time - total: 2.01436e+07
 unique subruns: 2041
 overall prescale: 1.16519
 prescale efficiency: 0.858227
+
+
+for sub_run duration 
+
+n events: 429602
+n subruns - 14 DB - DQ: 0
+n subruns - 14 DB - DQ 14 Good DB: 0
+n subruns - 14 DB - DQ Good: 0
+n subruns - total: 2049
+n subruns - unique: 2041
+prescale total: 500569
+run time - 14 DB: 320451
+run time - 14 DB - DQ 14 Good DB: 0
+run time - 14 DB - DQ Good: 0
+run time - 14 DB - DQ Scaled: 0
+run time - total: 321295
+unique subruns: 2041
+overall prescale: 1.16519
+prescale efficiency: 0.858227
+
