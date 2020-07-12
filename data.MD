@@ -61,3 +61,13 @@ test_slowmono_grid_150_gain_MC
 
 ### created by 
 sam_add_dataset --data_tier=fcl -d /pnfs/nova/scratch/users/melashri/gen_fcls/test -n test_slowmono_grid_150_gain_MC
+
+
+# Esong MC 
+
+melashri_slowmonopole_MC_5ms_snews_beta_1e
+
+##created with 
+samweb create-definition melashri_slowmonopole_MC_5ms_snews_beta_1e-4_to_beta_1e-3 "defname:esong_merged_monopole_and_5ms_cosmic_gain100_birksmodB_lowdedx_S16-10-07_beta1e-4to8e-1_20170228 and file_name like '%e-04_birksmod%' or file_name like '%e-03_birksmod%'"
+
+
