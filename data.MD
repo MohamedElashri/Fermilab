@@ -70,7 +70,13 @@ melashri_slowmonopole_MC_5ms_snews_beta_1e-4_to_beta_1e-3
 ##created with 
 samweb create-definition melashri_slowmonopole_MC_5ms_snews_beta_1e-4_to_beta_1e-3 "defname:esong_merged_monopole_and_5ms_cosmic_gain100_birksmodB_lowdedx_S16-10-07_beta1e-4to8e-1_20170228 and file_name like '%e-04_birksmod%' or file_name like '%e-03_birksmod%'"
 
-## overlay test dataset
+## overlay test dataset generation 
 novagpvm07:melashri> sam_add_dataset --data_tier=fcl -n melashri_overlay_test_3 -d /pnfs/nova/scratch/users/melashri/overlay/
 WARNING:root:the dataset with name melashri_overlay_test_3 was created
 
+## overlayed MC test dataset  
+
+melashri_MC_overlay_High_gain_test
+
+## created with 
+sam_add_dataset --data_tier=artdaq  -d  /pnfs/nova/persistent/users/melashri/test_overlay -n melashri_MC_overlay_High_gain_test
