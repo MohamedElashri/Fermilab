@@ -80,3 +80,6 @@ melashri_MC_overlay_High_gain_test
 
 ## created with 
 sam_add_dataset --data_tier=artdaq  -d  /pnfs/nova/persistent/users/melashri/test_overlay -n melashri_MC_overlay_High_gain_test
+
+# dataset for mc overlay
+melashri_MC_overlay_High_gain
