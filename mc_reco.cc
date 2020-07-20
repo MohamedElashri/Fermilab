@@ -1,9 +1,7 @@
 /*
 
-  Run over monopole tree and generate reconstruction histograms 
-
-  for MC.
-
+  Run over monopole tree and generate reconstruction histograms for MC.
+  Modified : mlashri, July 2020
 */
 
 #include "Constants.hh"
